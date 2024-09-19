@@ -1,1 +1,6 @@
 # CryptoClustering
+
+
+This repository demonstrates the application of unsupervised learning (using SciKit-Learn) to analyze cryptocurrency data. Price fluctuations of various cryptocurrencies were examined over different time intervals using K-means clustering. Initially, the data was normalized with StandardScaler, followed by generating an elbow chart to determine the optimal number of clusters (k). The K-means algorithm was then applied to group cryptocurrencies based on similar price movement patterns, which can assist in making informed investment decisions and identifying outliers.
+
+Next, Principal Component Analysis (PCA) was conducted with three principal components, capturing 89% of the original variance. The elbow chart and K-means clustering were performed again on the PCA-transformed data. While the optimal number of clusters (k) was at 4, the pca method gave other options as well such as 2,3,4, the elbow chart displayed a clearer inflection point. Additionally, the clusters formed in the reduced dimensional space were more distinct and tightly grouped, reflecting the benefits of dimensionality reduction from the original dataset.
